@@ -37,7 +37,7 @@ brew install openssl@1.1
 
 ------------------------------------------------------------------------
 
-## 🔎 Verify Installation
+## Verify Installation
 
 ``` bash
 openssl version
