@@ -26,7 +26,7 @@ If you are starting a new project, use OpenSSL 3.x instead.
 ### Tap the repository
 
 ``` bash
-brew tap Teviwe/openssl git@github.com:Teviwe/homebrew-openssl.git
+brew tap Teviwe/openssl https://github.com/Teviwe/homebrew-openssl.git
 ```
 
 ### Install OpenSSL 1.1
