@@ -2,13 +2,13 @@
 
 Private Homebrew tap that provides the legacy **OpenSSL 1.1** formula.
 
-> ⚠️ OpenSSL 1.1 is deprecated and no longer maintained in Homebrew
+> OpenSSL 1.1 is deprecated and no longer maintained in Homebrew
 > core.\
 > This tap exists strictly for legacy compatibility purposes.
 
 ------------------------------------------------------------------------
 
-## 📌 Overview
+## Overview
 
 This repository hosts a private Homebrew tap for installing **OpenSSL
 1.1**, which has been removed from the official Homebrew core
@@ -21,40 +21,15 @@ If you are starting a new project, use OpenSSL 3.x instead.
 
 ------------------------------------------------------------------------
 
-## 🔐 Prerequisites
+## Installation
 
-Since this is a **private repository**, you must have SSH access
-configured.
-
-### 1. Generate SSH key (if you don't have one)
-
-``` bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-### 2. Add SSH key to GitHub
-
--   Go to **GitHub → Settings → SSH and GPG keys**
--   Click **New SSH key**
--   Paste your public key
-
-### 3. Verify access
-
-``` bash
-ssh -T git@github.com
-```
-
-------------------------------------------------------------------------
-
-## 🚀 Installation
-
-### 1️⃣ Tap the repository
+### Tap the repository
 
 ``` bash
 brew tap Teviwe/openssl git@github.com:Teviwe/homebrew-openssl.git
 ```
 
-### 2️⃣ Install OpenSSL 1.1
+### Install OpenSSL 1.1
 
 ``` bash
 brew install openssl@1.1
@@ -74,7 +49,7 @@ Expected output:
 
 ------------------------------------------------------------------------
 
-## 🧩 Optional Linking (Use Carefully)
+## Optional Linking (Use Carefully)
 
 If your build requires explicit linking:
 
@@ -82,11 +57,11 @@ If your build requires explicit linking:
 brew link --force --overwrite openssl@1.1
 ```
 
-⚠️ This may override newer OpenSSL versions.
+This may override newer OpenSSL versions.
 
 ------------------------------------------------------------------------
 
-## 🛑 Important Notes
+## Important Notes
 
 -   OpenSSL 1.1 is End Of Life (EOL)
 -   No security updates are guaranteed
@@ -95,21 +70,7 @@ brew link --force --overwrite openssl@1.1
 
 ------------------------------------------------------------------------
 
-## 🧯 Troubleshooting
-
-If Homebrew cannot access the repository:
-
--   Verify SSH authentication:
-
-    ``` bash
-    ssh -T git@github.com
-    ```
-
--   Ensure your GitHub account has access to the private repository
-
-------------------------------------------------------------------------
-
-## 📦 Maintenance
+## Maintenance
 
 This tap is privately maintained and may not receive regular updates.
 Use at your own risk.
